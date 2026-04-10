@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>合拍Tennis - 你的专业网球社交APP</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PingFang+SC:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 导航栏 -->
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-xl border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-tennis-green rounded-xl flex items-center justify-center shadow-lg shadow-green-200">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="text-2xl font-black tracking-tighter italic">合拍<span class="text-tennis-green uppercase not-italic">Tennis</span></span>
+            </div>
+            <div class="hidden md:flex gap-8 font-bold text-sm text-gray-500">
+                <a href="#features" class="hover:text-tennis-green transition">功能亮点</a>
+                <a href="#footer" class="hover:text-tennis-green transition">关注我们</a>
+            </div>
+            <button type="button" data-open-beta class="bg-tennis-green text-white px-6 py-2.5 rounded-full font-bold hover:scale-105 transition shadow-md shadow-green-100">
+                内测申请
+            </button>
+        </div>
+    </nav>
+
+    <!-- 第一屏：Hero -->
+    <section class="pt-40 pb-20 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <div class="flex-1 space-y-8">
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-green-50 text-tennis-green rounded-full text-xs font-bold tracking-widest uppercase">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    Beta 1.0 Now Open
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black leading-[1.05] tracking-tight">
+                    让网球<br><span class="text-tennis-green italic">更合拍</span>
+                </h1>
+                <p class="text-lg text-gray-500 leading-relaxed max-w-md font-medium">
+                    精准匹配、AI高光、训练追踪。合拍Tennis 重新定义你的网球社交体验，连接每一位纯粹的球友。
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <div class="bg-black text-white px-8 py-4 rounded-2xl flex items-center gap-3 cursor-not-allowed shadow-xl">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 21.8-88.5 21.8-11.4 0-51.1-22.2-84.6-21-43 1.2-83.2 24.3-105.4 63.3-46.9 81.3-12 201.2 32.7 267.3 21.9 31.7 47.9 67.4 82 66 32.5-1.4 44.8-21.2 84.1-21.2 38.8 0 50.8 21.2 84.5 20.5 35.3-.5 58.3-32.3 80.1-64.1 24.6-35.9 34.6-70.5 35-72.3-1-0.2-67-25.7-67.6-102.5zM240.3 57.2c19-23.2 32-55.5 28.5-87.7-27.7 1.1-59.5 18.5-79.4 42-17.9 20.6-33.6 53.6-29.4 85 30.6 2.4 61.2-16.1 80.3-39.3z"/></svg>
+                        <div class="text-left leading-tight">
+                            <p class="text-[9px] uppercase font-bold opacity-50 tracking-widest">Coming soon</p>
+                            <p class="font-bold text-base">App Store</p>
+                        </div>
+                    </div>
+                    <button type="button" data-open-beta class="border-2 border-tennis-green text-tennis-green px-8 py-4 rounded-2xl font-bold hover:bg-tennis-green hover:text-white transition">
+                        内测申请
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex-1 relative">
+                <div class="iphone-mockup">
+                    <div class="dynamic-island"></div>
+                    <video class="w-full h-full object-cover" style="transform: translateY(-0.5%) scale(3.8); transform-origin: 50% 50%;" src="./assets/mockups/1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                </div>
+                <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[110%] h-[110%] bg-green-100/40 rounded-full blur-[80px]"></div>
+            </div>
+        </div>
+    </section>
+
+    <div id="features" class="bg-white rounded-t-[60px] shadow-[0_-30px_60px_-15px_rgba(0,0,0,0.03)] pb-24">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="flex flex-col md:flex-row items-center gap-20 py-32 border-b border-gray-50">
+                <div class="flex-1 order-2 md:order-1">
+                    <div class="iphone-mockup">
+                        <div class="dynamic-island"></div>
+                        <video class="w-full h-full object-cover" style="transform: translateY(-0.5%) scale(3.8); transform-origin: 50% 50%;" src="./assets/mockups/2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                </div>
+                <div class="flex-1 order-1 md:order-2 space-y-6">
+                    <h2 class="text-4xl font-bold italic tracking-tight">精准匹配<br>找到你的<span class="text-tennis-green uppercase not-italic">黄金球友</span></h2>
+                    <p class="text-gray-500 text-lg leading-relaxed font-medium">
+                        不再为水平不均而烦恼。合拍基于 NTRP 等级，为你推荐物理位置更近、水平最契合的伙伴。左划忽略，右划“合拍”。
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-20 py-32 border-b border-gray-50">
+                <div class="flex-1 space-y-6">
+                    <h2 class="text-4xl font-bold italic tracking-tight">AI 智能高光<br><span class="text-tennis-green not-italic">见证每一记 ACE</span></h2>
+                    <p class="text-gray-500 text-lg leading-relaxed font-medium">
+                        无需手动剪辑。支持场馆 AI 摄像头录制或本地视频上传，AI 自动为你提取击球瞬间，让进步清晰可见。
+                    </p>
+                </div>
+                <div class="flex-1">
+                    <div class="iphone-mockup">
+                        <div class="dynamic-island"></div>
+                        <video class="w-full h-full object-cover" style="transform: translateY(-0.5%) scale(3.8); transform-origin: 50% 50%;" src="./assets/mockups/3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-20 py-32">
+                <div class="flex-1 order-2 md:order-1">
+                    <div class="iphone-mockup">
+                        <div class="dynamic-island"></div>
+                        <img src="./assets/mockups/4.jpg" alt="网球组局" width="290" height="628" loading="lazy" decoding="async">
+                    </div>
+                </div>
+                <div class="flex-1 order-1 md:order-2 space-y-6">
+                    <h2 class="text-4xl font-bold uppercase italic tracking-tighter">组局 / 练球<br><span class="text-tennis-green not-italic uppercase">一呼百应</span></h2>
+                    <p class="text-gray-500 text-lg leading-relaxed font-medium">
+                        无论是周末双打、晚间练习。合拍帮你搞定预约、验证和分摊，只需专注于场上的挥拍。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer" class="py-24 bg-gray-950 text-white text-center px-6">
+        <h3 class="text-3xl font-black mb-12 italic uppercase tracking-[0.2em] opacity-80">Join the Club.</h3>
+
+        <div class="flex justify-center gap-12 mb-16">
+            <div class="group cursor-pointer">
+                <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-tennis-green transition duration-300 mb-3">
+                    <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M8.22 2.977c-4.54 0-8.22 3.324-8.22 7.424 0 2.228 1.087 4.234 2.822 5.642l-.715 2.128 2.5-.724c1.1.306 2.274.478 3.513.478.14 0 .28-.003.418-.01-.326-.788-.507-1.644-.507-2.54 0-3.69 3.364-6.68 7.513-6.68.23 0 .456.012.68.032C15.343 5.488 12.08 2.977 8.22 2.977zm10.267 7.747c-3.483 0-6.307 2.544-6.307 5.682 0 1.705.834 3.24 2.16 4.318l-.547 1.63 1.914-.555c.844.234 1.745.366 2.693.366 3.484 0 6.308-2.544 6.308-5.682 0-3.138-2.824-5.682-6.308-5.682z"/></svg>
+                </div>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-gray-500 group-hover:text-white transition">微信公众号</p>
+            </div>
+
+            <div class="group cursor-pointer">
+                <div class="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center group-hover:bg-[#FF2442] transition duration-300 mb-3 font-black text-xl">
+                    红
+                </div>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-gray-500 group-hover:text-white transition">小红书</p>
+            </div>
+        </div>
+
+        <p class="text-[11px] text-gray-600 font-bold uppercase tracking-[0.3em]">© 2026 合拍TENNIS SOCIAL APP. <br class="md:hidden"> ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <!-- 内测申请：FormSubmit → 2261457473@qq.com，首次需在邮箱内完成验证 -->
+    <div id="beta-modal" class="fixed inset-0 z-[100] hidden" aria-modal="true" role="dialog" aria-labelledby="beta-modal-title">
+        <div class="absolute inset-0 bg-black/50" data-close-modal tabindex="-1"></div>
+        <div class="relative max-w-md mx-auto mt-16 md:mt-24 px-4 pb-8 pointer-events-none">
+            <div class="bg-white rounded-2xl shadow-xl p-8 pointer-events-auto">
+                <div class="flex items-start justify-between gap-4 mb-6">
+                    <h2 id="beta-modal-title" class="text-xl font-bold">内测申请</h2>
+                    <button type="button" data-close-modal class="text-gray-400 hover:text-gray-700 text-2xl leading-none" aria-label="关闭">&times;</button>
+                </div>
+                <form action="https://formsubmit.co/2261457473@qq.com" method="POST" class="space-y-4">
+                    <input type="hidden" name="_subject" value="合拍Tennis 内测申请">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div>
+                        <label for="beta-name" class="block text-sm font-medium text-gray-700 mb-1">称呼</label>
+                        <input id="beta-name" type="text" name="name" required autocomplete="name" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-tennis-green focus:border-transparent outline-none" placeholder="怎么称呼你">
+                    </div>
+                    <div>
+                        <label for="beta-email" class="block text-sm font-medium text-gray-700 mb-1">邮箱</label>
+                        <input id="beta-email" type="email" name="email" required autocomplete="email" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-tennis-green focus:border-transparent outline-none" placeholder="用于接收内测通知">
+                    </div>
+                    <div>
+                        <label for="beta-note" class="block text-sm font-medium text-gray-700 mb-1">备注（选填）</label>
+                        <textarea id="beta-note" name="message" rows="3" class="w-full border border-gray-200 rounded-xl px-4 py-2.5 focus:ring-2 focus:ring-tennis-green focus:border-transparent outline-none resize-y" placeholder="城市、NTRP、常用球场等"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-tennis-green text-white py-3 rounded-full font-bold hover:opacity-90 transition">提交申请</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var modal = document.getElementById("beta-modal");
+            if (!modal) return;
+            function openModal() {
+                modal.classList.remove("hidden");
+                document.body.style.overflow = "hidden";
+            }
+            function closeModal() {
+                modal.classList.add("hidden");
+                document.body.style.overflow = "";
+            }
+            document.querySelectorAll("[data-open-beta]").forEach(function (el) {
+                el.addEventListener("click", openModal);
+            });
+            modal.querySelectorAll("[data-close-modal]").forEach(function (el) {
+                el.addEventListener("click", closeModal);
+            });
+            document.addEventListener("keydown", function (e) {
+                if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
+            });
+        })();
+    </script>
+</body>
+</html>

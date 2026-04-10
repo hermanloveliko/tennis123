@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-[#1A1A1A] scroll-smooth;
+    font-family: "PingFang SC", ui-sans-serif, system-ui, sans-serif;
+    background-color: #f8f9fb;
+  }
+}
+
+@layer components {
+  .iphone-mockup {
+    @apply relative overflow-hidden bg-white mx-auto transition-transform duration-500 ease-out;
+    border: 12px solid #1a1a1a;
+    border-radius: 3.5rem;
+    box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.12);
+    aspect-ratio: 9 / 19.5;
+    width: 100%;
+    max-width: 290px;
+  }
+  .iphone-mockup:hover {
+    transform: translateY(-10px);
+  }
+  .iphone-mockup img {
+    @apply w-full h-full object-cover;
+  }
+  .dynamic-island {
+    @apply absolute z-10 bg-[#1a1a1a] rounded-[20px];
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 26px;
+  }
+}
